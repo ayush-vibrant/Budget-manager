@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Budget Manager",
+  "description": "Keeps track of all your spendings.",
+  "version": "1.0",
+  "icons": {
+    
+    "16": "16pixel.png"
+  },
+
+  "browser_action": {
+    "default_icon": "16pixel.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["selectText.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+          "storage",
+          "notifications",
+          "contextMenus"
+        ],
+
+  "options_page": "options.html"
+}
